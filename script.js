@@ -20,7 +20,7 @@ function conversion() {
         isValid = isValidHex(hexColor);
         // checks validity of hex color
         if (!isValid) {
-            alert("Invalid Hex Color");
+            alert("Invalid Hex Color. Please use format #FFF or #FFFFFF");
             return;
         }
         rgbColor = colorConversion(hexColor, isHexToRgb);
@@ -31,11 +31,11 @@ function conversion() {
         isValid = isValidRgb(rgbColor);
         // checks validity of rgb color and bounds
         if (!isValid) {
-            alert("Invalid RGB Color");
+            alert("Invalid RGB Color. Please use format rgb(255,255,255)");
             return; 
         }
         if (isNotInBounds(rgbColor)) {
-            alert("Not in Bounds");
+            alert("Not in Bounds. Please choose numbers [0, 255]");
             return; 
         }
         hexColor = colorConversion(rgbColor, isHexToRgb);
@@ -145,14 +145,14 @@ function flipInputs() {
     tempbottom = document.getElementById("rgb-color").value;
 
     if (isHexToRgb) {
-        document.getElementById("hex-color").placeholder = "hex";
-        document.getElementById("rgb-color").placeholder = "rgb";
+        document.getElementById("hex-color").placeholder = "#FFFFFF";
+        document.getElementById("rgb-color").placeholder = "rgb(255, 255, 255)";
         document.getElementById("hex-color").value = tempbottom;
         document.getElementById("rgb-color").value = temptop;
         document.getElementsByTagName("h2")[0].innerText = "HEX to RGB";
     } else {
-        document.getElementById("hex-color").placeholder = "rgb";
-        document.getElementById("rgb-color").placeholder = "hex";
+        document.getElementById("hex-color").placeholder = "rgb(255, 255, 255)";
+        document.getElementById("rgb-color").placeholder = "#FFFFFF";
         document.getElementById("hex-color").value = tempbottom;
         document.getElementById("rgb-color").value = temptop;
         document.getElementsByTagName("h2")[0].innerText = "RGB to HEX";
