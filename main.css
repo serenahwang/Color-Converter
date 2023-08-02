@@ -32,15 +32,11 @@ h2 {
     flex-direction: column;
 }
 
-.rgb {
+.rgb, .hex {
     text-align: center;
 }
 
-.hex {
-    text-align: center;
-}
-
-.hex-input {
+.hex-input, .rgb-input {
     height: 35px;
     width: 350px;
     font-size: 23px;
@@ -50,34 +46,13 @@ h2 {
     padding-left: 8px;
 }
 
-
-.rgb-input {
-    height: 35px;
-    width: 350px;
-    font-size: 23px;
-    margin-bottom: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    font-family: 'Overpass Mono', monospace;
-    padding-left: 8px;
-}
-
-.flip {
+.flip, .clear {
     height: 30px;
     font-size: 20px;
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     font-family: 'Overpass Mono', monospace;
     text-decoration: none;
-}
-
-.clear {
-    height: 30px;
-    font-size: 20px;
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    font-family: 'Overpass Mono', monospace;
-    text-decoration: none;
-
 }
 
 .convert {
