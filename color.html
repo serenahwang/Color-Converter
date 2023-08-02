@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Color Converter</h1>
+        <h2>HEX to RGB</h2>
+        <div class="input-container">
+            <form id="hex">
+                <input class="hex-input"
+                    type="text"
+                    id="hex-color"
+                    placeholder="hex" />
+            </form>
+    
+            <form id="rgb">
+                <input class="rgb-input"
+                    type="text"
+                    id="rgb-color"
+                    placeholder="rgb"
+                    readonly/>
+            </form>
+
+            <form">
+                <input class="convert"
+                type="button"
+                id="convert-color"
+                value="Convert" />
+            </form>
+
+            <form>
+                <input class="flip"
+                    type="button"
+                    id="flip-values"
+                    value="Flip"
+                    onclick="flipInputs()"/>
+                <input class="clear"
+                    type="button"
+                    id="clear-values"
+                    value="Clear"
+                    onclick="clearInputs()"/>
+            </form>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
