@@ -67,6 +67,7 @@ h2 {
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
 }
 
 .clear {
@@ -75,6 +76,7 @@ h2 {
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
 
 }
 
@@ -86,6 +88,7 @@ h2 {
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
 }
 
 
